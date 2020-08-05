@@ -1,2 +1,2 @@
 # AdukarIT
-It courses
+simple code from IT courses
