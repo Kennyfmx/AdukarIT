@@ -1,0 +1,43 @@
+body {
+  background: #fff;
+  font-family: Arial;
+  width: 300px;
+  height: 200px;
+  padding: 1px;
+  border-radius: 20px;
+  border: 1px solid #000 ;
+  z-index: 2;
+  
+
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+
+.cross {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 100px;
+}
+
+p {
+  position: relative;
+  left: 10px;
+
+}
+.sector2 {
+
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  left: 240px;
+  top: 15px;
+  
+}
