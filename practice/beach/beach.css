@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.main-block {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 1000px;
+	background: url(img/sun.png) left top no-repeat, url(img/sea.jpg) bottom no-repeat, url(img/sky.jpg) top;
+	background-size: 40%, contain, cover;
+	
+}
