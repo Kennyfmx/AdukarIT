@@ -1,0 +1,56 @@
+body {
+	background: #fff;
+	width: 210mm;
+  	height: 297mm;
+	color: #000;
+  	font-size: 10pt;
+  	font-family: "Times New Roman", Arial, Verdana, sans-serif;
+  	margin: 0;
+  	padding: 60px 50px 60px 50px;
+  	
+}
+
+h1 {
+	color: #000;
+  	text-align: center;
+  	margin-top: 10px;
+}
+
+.theme {
+	color: #000;
+	font-size: 20pt;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.theme2 {
+	color: #000;
+	font-weight: 600;
+	font-size: 18pt;
+	text-align: center;
+}
+
+.whois {
+	width: 350px;
+  	height: 120px;
+	color: #000;
+	line-height: 1pt;
+	font-weight: normal;
+	font-size: 15pt;
+	text-align: left;
+	margin-top: 150px;
+	margin-left: 400px;
+}
+
+.line {
+	text-decoration: underline;
+}
+
+.minsk {
+	color: #000;
+	font-weight: 300;
+	font-size: 20pt;
+	text-align: center;
+	margin-top: 280px;
+
+}
