@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>HighLife &ndash; твой круг общения</title>
+    <meta charset="utf-8">
+	<meta name="description" content="сеть">
+    <meta name="keywords" content="фото, видео">
+  </head>
+  <body>
+	<header class="header">
+		<a><img src="highlifelogo.png" alt="highlifelogo"></a>
+		<h1>HighLife &ndash; твой круг общения</h1>
+	</header>
+	<!-- ФОРМА ВХОДА -->
+		<p>Войти на сайт</p>
+	<form id="signin" action="feed.html" name="Sign in" method="get" autocomplete="on">
+		<fieldset>
+		<legend>Войти</legend>
+		<label>
+			<input type="email" placeholder="E-mail" name="email" required><br>
+		</label>
+		<label>
+			<input type="password" placeholder="пароль" name="password" required><br>
+		</label>
+		<button type="reset">Очистить</button>
+		<button>Войти</button>
+		</fieldset>
+	</form>
+	<!-- ФОРМА РЕГИСТРАЦИИ -->
+		<p>Первый раз на сайте&#63; Пройдите регистрацию ниже</p>
+	<form id="signup" action="feed.html" name="Sign up" method="get" autocomplete="on">
+		<fieldset>
+		<legend>Регистрация на сайте</legend>
+			<label>
+				<input type="email" placeholder="E-mail" name="email" required><br>
+			</label>
+			<label>
+				<input type="password" placeholder="введите пароль" name="password" required><br>
+			</label>
+			<label>
+				<input type="password" placeholder="подтвердите пароль" name="password" required><br>
+			</label>
+			<label>
+				<input type="checkbox" name="согласен" required>Пожалуйста&#44; сообщите нам о согласии с порядком обработки персональных данных
+			</label><br>
+			<button type="reset">Очистить</button>
+			<button>Зарегистрироваться</button>
+		</fieldset>
+	</form>
+	</body>
+</html>	

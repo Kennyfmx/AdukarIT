@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>HighLife Соцсеть фотографий и видео</title>
+    <meta charset="utf-8">
+	<meta name="description" content="сеть">
+    <meta name="keywords" content="фото, видео">
+  </head>
+ <body>
+ 	<header class="header">
+		<a href="feed.html"><img src="highlifelogo.png" alt="highlifelogo"></a>
+		<h1>HighLife &ndash; твой круг общения</h1>
+	</header>
+	<div>
+		<p><a href="feed.html">Узнай&#44; что нового у твоих друзей&#46;</a></p>
+	</div>
+	<form class="newpost" id="newpost" action="feed.html" name="New post" method="get" autocomplete="off">
+		<fieldset>
+			<legend>Расскажи друзьям&#44; что у тебя нового&#133;</legend>
+			<label>
+				<input type="Text" placeholder="Текст" name="Текст">
+			</label>
+			<div>
+				<button type="reset">Очистить</button>
+			</div>
+			<div>
+				<button>Запостить</button>
+			</div>	
+		</fieldset>
+	</form>
+	<form>
+  		<div>
+    		<label for="upload_file">Добавить в ленту</label>
+    		<input type="file" id="upload_file" name="upload_file" accept=".jpg, .jpeg, .png, .mp4">
+  		</div>
+  		<div>
+    		<button>Добавить</button>
+  		</div>
+	</form>
+</body>
+</html>
