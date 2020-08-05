@@ -1,0 +1,45 @@
+.socials {
+		text-align: center;
+		 a {
+			margin-top: 1.7em;
+			font-size: 3em;
+			padding-right: 0.5em;
+		    text-decoration: none;
+		    transition: ease-out 0.5s;
+		    color: #000;
+		}
+		a:last-child {
+			padding-right: 0;
+		}
+	}
+	.fa {
+		display: inline-block;
+		font-style: normal;
+	    font-variant-ligatures: normal;
+	    font-variant-caps: normal;
+	    font-variant-numeric: normal;
+	    font-variant-east-asian: normal;
+	    font-weight: normal;
+	    font-stretch: normal;
+	    font-size: inherit;
+	    line-height: 1;
+	    font-family: FontAwesome;
+	}
+	.a:hover {
+		font-size: 4em;
+	}
+	.fa-telegram:before {
+		content: "\f2c6";
+	}
+	.fa-facebook:before {
+		content: "\f09a";
+	}
+	.fa-vk:before {
+	    content: "\f189";
+	}
+	.fa-instagram:before {
+	    content: "\f16d";
+	}
+	.fa-twitter:before {
+	    content: "\f099";
+	}

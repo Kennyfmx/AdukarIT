@@ -1,0 +1,35 @@
+.main__right {
+	display: block;
+	margin: 1.8em 2em 1.8em 0;
+	@media (max-width: 1200px) {
+		display: none;
+	}
+	.right__element {
+		background: url(../img/BG_elem_right.png) no-repeat;
+	    width: 284px;
+	    height: 250px;
+	    margin-bottom: 2em;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    position: relative;
+	    .element-name__right {
+		    margin: .8em -1.5em .8em 0;
+		    font-weight: 400;
+		    font-size: 1.25em;
+		    color: #383838;
+		    transition: ease-out 1s;
+		}
+		p {
+			display: block;
+		    margin: 0;
+		    margin-right: -2em;
+		    width: 17em;
+		    font-size: .9em;
+		    text-align: center;
+		    transition: ease-out 1s;
+		}
+		@import 'icons';
+	}
+}

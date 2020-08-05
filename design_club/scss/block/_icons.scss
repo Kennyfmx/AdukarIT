@@ -1,0 +1,30 @@
+.fas{
+    position: absolute;
+    top: 1.2em;
+    font-size: 2em;
+    transition: ease-out 1s;
+}
+.left__icon {
+    left: 3.42em;
+}
+.right__icon {
+    right: 3.42em;
+}
+.fa-bullhorn:before {
+    content: "\f0a1";
+}
+.fa-map-marker:before {
+    content: "\f041";
+}
+.fa-thumbs-up:before {
+    content: "\f164";
+}
+.fa-handshake:before {
+    content: "\f2b5";
+}
+.fa-users:before {
+    content: "\f0c0";
+}
+.fa-question-circle:before {
+    content: "\f059";
+}

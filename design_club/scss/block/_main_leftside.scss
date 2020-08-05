@@ -1,0 +1,35 @@
+.main__left {
+	display: block;
+	margin: 1.8em 0 1.8em 2em;
+	@media (max-width: 1200px) {
+		display: none;
+	}
+	.left__element {
+		background: url(../img/BG_elem_left.png) no-repeat;
+	    width: 255px;
+	    height: 250px;
+	    margin-bottom: 2em;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    position: relative;
+		.element-name__left {
+		    margin: .8em 0 .8em -.8em;
+		    font-weight: 400;
+		    font-size: 1.25em;
+		    color: #383838;
+		    transition: ease-out 1s;
+		}
+		p {
+			display: block;
+		    margin: 0;
+		    margin-left: -1.5em;
+		    width: 13.3em;
+		    font-size: .9em;
+		    text-align: center;
+		    transition: ease-out 1s;
+		}
+		@import 'icons';
+	}
+}

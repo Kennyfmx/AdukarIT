@@ -1,0 +1,396 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bank Gothic Bold";
+  src: url("../fonts/BankGothicBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "FontAwesome";
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #646464;
+  font-family: "Bank Gothic Bold", "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.main__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 93%;
+  margin: 2% 3%;
+  background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+  border: 1px solid #e0e0e0;
+  border-radius: 2em;
+  box-shadow: -7px 7px 25px 0px rgba(0, 0, 0, 0.37);
+}
+@media (max-width: 1200px) {
+  .main__block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.2em;
+    background: #f0f1f2;
+    border-radius: 0;
+    flex-direction: column;
+  }
+}
+
+.main__middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  padding: 0 2em;
+}
+.main__middle .main__middle__img {
+  width: 21.5em;
+  margin-top: 3em;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.main__middle div.dc_animated {
+  font-size: 5.3em;
+  font-family: "Bank Gothic Bold", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -3.5px;
+  cursor: default;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+.main__middle span.dc_animated {
+  font-size: 3em;
+  font-family: "Bank Gothic Bold", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.42em;
+  width: 7.3em;
+  cursor: default;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+.main__middle .dc_description {
+  margin-top: 1em;
+  font-size: 1em;
+  width: 22em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.main__middle .main__middle__button {
+  margin-top: 2em;
+  padding-top: 5px;
+  width: 14em;
+  height: 42px;
+  line-height: 42px;
+  background: #000;
+  border-radius: 0.3em;
+  border: 0;
+  color: #eff0f1;
+  font-family: "Bank Gothic Bold", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 1s;
+}
+@media (max-width: 1200px) {
+  .main__middle .main__middle__button {
+    margin-top: 3em;
+    padding-top: 25px;
+    width: 13em;
+    height: 60px;
+  }
+}
+.main__middle .socials {
+  text-align: center;
+}
+.main__middle .socials a {
+  margin-top: 1.7em;
+  font-size: 3em;
+  padding-right: 0.5em;
+  text-decoration: none;
+  transition: ease-out 0.5s;
+  color: #000;
+}
+.main__middle .socials a:last-child {
+  padding-right: 0;
+}
+.main__middle .fa {
+  display: inline-block;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: inherit;
+  line-height: 1;
+  font-family: FontAwesome;
+}
+.main__middle .a:hover {
+  font-size: 4em;
+}
+.main__middle .fa-telegram:before {
+  content: "";
+}
+.main__middle .fa-facebook:before {
+  content: "";
+}
+.main__middle .fa-vk:before {
+  content: "";
+}
+.main__middle .fa-instagram:before {
+  content: "";
+}
+.main__middle .fa-twitter:before {
+  content: "";
+}
+
+.main__left {
+  display: block;
+  margin: 1.8em 0 1.8em 2em;
+}
+@media (max-width: 1200px) {
+  .main__left {
+    display: none;
+  }
+}
+.main__left .left__element {
+  background: url(../img/BG_elem_left.png) no-repeat;
+  width: 255px;
+  height: 250px;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main__left .left__element .element-name__left {
+  margin: 0.8em 0 0.8em -0.8em;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+  transition: ease-out 1s;
+}
+.main__left .left__element p {
+  display: block;
+  margin: 0;
+  margin-left: -1.5em;
+  width: 13.3em;
+  font-size: 0.9em;
+  text-align: center;
+  transition: ease-out 1s;
+}
+.main__left .left__element .fas {
+  position: absolute;
+  top: 1.2em;
+  font-size: 2em;
+  transition: ease-out 1s;
+}
+.main__left .left__element .left__icon {
+  left: 3.42em;
+}
+.main__left .left__element .right__icon {
+  right: 3.42em;
+}
+.main__left .left__element .fa-bullhorn:before {
+  content: "";
+}
+.main__left .left__element .fa-map-marker:before {
+  content: "";
+}
+.main__left .left__element .fa-thumbs-up:before {
+  content: "";
+}
+.main__left .left__element .fa-handshake:before {
+  content: "";
+}
+.main__left .left__element .fa-users:before {
+  content: "";
+}
+.main__left .left__element .fa-question-circle:before {
+  content: "";
+}
+
+.main__right {
+  display: block;
+  margin: 1.8em 2em 1.8em 0;
+}
+@media (max-width: 1200px) {
+  .main__right {
+    display: none;
+  }
+}
+.main__right .right__element {
+  background: url(../img/BG_elem_right.png) no-repeat;
+  width: 284px;
+  height: 250px;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main__right .right__element .element-name__right {
+  margin: 0.8em -1.5em 0.8em 0;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+  transition: ease-out 1s;
+}
+.main__right .right__element p {
+  display: block;
+  margin: 0;
+  margin-right: -2em;
+  width: 17em;
+  font-size: 0.9em;
+  text-align: center;
+  transition: ease-out 1s;
+}
+.main__right .right__element .fas {
+  position: absolute;
+  top: 1.2em;
+  font-size: 2em;
+  transition: ease-out 1s;
+}
+.main__right .right__element .left__icon {
+  left: 3.42em;
+}
+.main__right .right__element .right__icon {
+  right: 3.42em;
+}
+.main__right .right__element .fa-bullhorn:before {
+  content: "";
+}
+.main__right .right__element .fa-map-marker:before {
+  content: "";
+}
+.main__right .right__element .fa-thumbs-up:before {
+  content: "";
+}
+.main__right .right__element .fa-handshake:before {
+  content: "";
+}
+.main__right .right__element .fa-users:before {
+  content: "";
+}
+.main__right .right__element .fa-question-circle:before {
+  content: "";
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .mobile {
+    display: block;
+    margin-top: 2.8em;
+  }
+}
+
+.content-line {
+  display: flex;
+  margin-bottom: 2em;
+}
+.content-line .box__left {
+  width: 38%;
+  height: 15.35em;
+  background: #e9eae9;
+}
+.content-line .box__right {
+  width: 45%;
+  height: 15.35em;
+  background: #e9eae9;
+  z-index: 1;
+}
+.content-line .left__element_hidden {
+  background: url(../img/BG_elem_left.png) no-repeat;
+  margin: -1px;
+  width: 255px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-line .left__element_hidden i {
+  margin-left: -0.3em;
+  font-size: 2em;
+}
+.content-line .left__element_hidden p {
+  margin: 0;
+  margin-left: -1.5em;
+  width: 13.3em;
+  font-size: 0.9em;
+  text-align: center;
+}
+.content-line .left__element_hidden h3 {
+  margin: 0.8em 0 0.8em -0.8em;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+}
+.content-line .left__element_hidden:last-child {
+  margin-bottom: 0;
+}
+.content-line .right__element_hidden {
+  background: url(../img/BG_elem_mob_right.png) no-repeat;
+  width: 258px;
+  height: 250px;
+  margin-left: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.content-line .right__element_hidden i {
+  margin-right: -2em;
+  font-size: 2em;
+}
+.content-line .right__element_hidden p {
+  margin: 0;
+  margin-right: -4em;
+  width: 17em;
+  font-size: 0.9em;
+  text-align: center;
+}
+.content-line .right__element_hidden h3 {
+  margin: 0.8em -3em 0.8em 0;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+}
+
+.button_mob {
+  display: block;
+  text-align: center;
+  margin: 2em 35% 0 35%;
+  padding-top: 1.2em;
+  width: 13em;
+  height: 60px;
+  line-height: 60px;
+  background: #000;
+  border-radius: 0.3em;
+  border: 0;
+  color: #eff0f1;
+  font-family: "Bank Gothic Bold", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
