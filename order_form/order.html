@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Contact form</title>
+</head>
+<body>
+	<header>
+		<img class="header__logo" src="img/hlwhite.png" alt="highlife-logo">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="main__block"></div>
+			<div class="main__block__inside">
+			<h2>Contact Us</h2>
+			<form>
+				<div class="main__form__lines">
+					<div>
+						<label for="name" class="form__label">Name</label>
+						<input id="name" class="form__input" type="text" name="surname" placeholder=" " required>
+					</div>
+					<div class="main__form__lines">
+						<label for="phone" class="form__label">Телефон</label>
+						<input id="phone" class="form__input" type="tel" name="phone" placeholder=" " required>
+					</div>
+					<div class="main__form__lines">
+						<label for="email" class="form__label">E-mail</label>
+						<input id="email" class="form__input" type="email" name="email" placeholder=" " required>
+					</div>
+					<div class="comment__form">
+						<label for="message" class="comment__box__text">Your message:</label>
+						<textarea id="message" name="comments" placeholder=" " autocomplete="off" required></textarea>
+					</div>
+					<div>
+						<input class="checkbox__terms__input" type="checkbox" id="terms" name="terms" required>
+						<label class="checkbox__terms__label" for="terms">I agree to the<a class="terms__link" href="#">&nbsp;terms</a></label>
+						<button class="confirm__button" type="submit"><img src="img/button.png" alt="confirm__button"></button>
+					</div>
+					<p class="text__under__button">Click checkbox</p>
+				</div>
+			</form>
+		</div>
+		<div class="company__address"></div>
+		<div class="company__address__inside">
+			<h2>HighLife Ltd.</h2>
+			<p class="company__address__inside__text">220116, Belarus, Minsk, Dzerzhinsky avenue 69/2</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.2213750881853!2d27.488059747447867!3d53.86459198299993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd070a5809187%3A0x1732c6af71891181!2z0L_RgNC-0YHQv9C10LrRgiDQlNC30LXRgNC20LjQvdGB0LrQvtCz0L4gNjkvMiwg0JzQuNC90YHQuiAyMjAwODk!5e0!3m2!1sru!2sby!4v1551220475776" allowfullscreen></iframe>
+	</main>
+</body>
+</html>
