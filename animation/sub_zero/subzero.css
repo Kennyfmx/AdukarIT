@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.sprite__wrap {
+	display: block;
+	margin: 100px auto;
+	width: 66px;
+	height: 135px;
+	overflow: hidden;
+
+}
+
+.sprite {
+	transition: 0.3s steps(6);
+}
+
+.sprite__wrap:hover > .sprite {
+	transform:	translateX(-396px);
+	
+}

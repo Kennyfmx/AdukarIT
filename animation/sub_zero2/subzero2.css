@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.sprite__wrap {
+	display: block;
+	margin: 100px auto;
+	width: 66px;
+	height: 135px;
+	overflow: hidden;
+	
+}
+
+.sprite:hover {
+	animation: sprite 0.3s steps(7) 0s infinite alternate both running;
+	/*animation-name: sprite;
+	animation-duration: 1s;
+	animation-timing-function: steps(7);
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	animation-play-state: running;*/
+}
+
+@keyframes sprite {
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(-462px);
+}

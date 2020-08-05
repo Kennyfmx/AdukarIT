@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.propeller__wrap {
+	width: 600px;
+	height: 600px;
+	display: block;
+	position: relative;
+	margin: 100px auto;
+	
+	
+}
+
+/*.backlight {
+	position: absolute;
+	top: calc(50% - 70px);
+	left: calc(50% - 70px);
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	box-shadow: 0 0 100px 40px #000;
+}*/
+
+.propeller {
+	width: 600px;
+	height: 600px;
+	transition: 7s ease;
+}
+
+
+.propeller:hover {
+	transform: rotateZ(1080deg);
+
+}
