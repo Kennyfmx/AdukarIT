@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Contact form</title>
+</head>
+<body>
+	<header>
+		<img class="header__logo" src="img/hlwhite.png" alt="highlife-logo">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="photo__block"></div>
+		<div class="contact__block">
+			<div class="contact__wrap">
+				<h2>Drop Us A Message</h2>
+	             <label for="name" class="contact__label"><span class="label__text">Full Name</span><span class="req">*</span>
+	             </label>
+	              <input id="name" class="contact__input" type="text" required autocomplete="on" />
+	            </div>
+	            <div class="contact__wrap">
+	              <label for="email" class="contact__label"><span class="label__text">E-mail</span><span class="req">*</span>
+	              </label>
+	              <input id="email" class="contact__input" type="email" required autocomplete="on" />
+	            </div>
+	            <div class="massage__form">
+					<label for="message" class="message__box__label"><span class="label__text">Your Massage</span></label>
+					<textarea id="message" name="Message" placeholder=" " autocomplete="off" required></textarea>
+				</div>
+				<div class="checkbox">
+					<form>
+						<input class="checkbox__terms__input" type="checkbox" id="terms" name="terms" required>
+						<label class="checkbox__terms__label" for="terms">I Agree To The<a class="terms__link" href="#">&nbsp;Terms</a></label>
+						<button class="confirm__button" type="submit">Send</button>
+					</form>
+				</div>
+				<p class="text__under__button">Click on checkbox for message</p>
+			</div>
+	</main>
+</body>
+</html>
