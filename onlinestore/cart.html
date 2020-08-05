@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Интернет магазин товаров для дома</title>
+</head>
+<body>
+	<header>
+		<section><a href="index.html"><img class="company__logo" alt="логотип" src="img/companylogo.jpg"></a>
+			<h1>www.4Home.by</h1>
+			<p class="header__text">Удобный каталог техники для вашего дома</p>
+			<form action="basket.html">
+				<button class="basket__button"><img alt="basket" src="img/basket.png"></button>
+			</form>
+			<form class="search__box">
+				<input id="search" class="search__field" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off">
+					<button class="form__label">поиск</button>
+			</form>
+		</section>
+		<nav>
+			<ul id="menu">
+				<li class="main__menu"><a href="#">Бытовая&nbsp;техника</a>
+					<ul class="submenu">
+						<li><a href="#">Стиральные&nbsp;машины</a></li>
+						<li><a href="#">Пылесосы</a></li>
+						<li><a href="#">Швейные&#44;&nbsp;Вышивальные&nbsp;машины</a></li>
+						<li><a href="#">Утюги</a></li>
+						<li><a href="#">Электровеники</a></li>
+						<li><a href="#">Сушилка&nbsp;для&nbsp;обуви</a></li>
+					</ul>
+				</li>
+				<li class="main__menu"><a href="#">Техника&nbsp;для&nbsp;кухни</a>
+					<ul class="submenu">
+						<li><a href="#">Холодильник</a></li>
+						<li><a href="#">Кухонные&nbsp;плиты</a></li>
+						<li><a href="#">Морозильники</a></li>
+						<li><a href="#">Настольные&nbsp;плиты</a></li>
+						<li><a href="#">Ростеры&#44;&nbsp;мини&#8211;печи</a></li>
+						<li><a href="#">Вытяжки</a></li>
+						<li><a href="#">Микроволновые&nbsp;печи</a></li>
+					</ul>
+				</li>
+				<li class="main__menu"><a href="#">Компьютерная&nbsp;техника</a>
+					<ul class="submenu">
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Планшеты</a></li>
+						<li><a href="#">Компьютеры&#44;&nbsp;моноблоки</a></li>
+						<li><a href="#">Игровые&nbsp;приставки</a></li>
+						<li><a href="#">Серверное&nbsp;оборудование</a></li>
+					</ul>
+				</li>
+				<li class="main__menu"><a href="#">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="order__form">
+			<h2 class="order__form__title">Заполни тут</h2>
+			<form action="basket.html" name="order" method="post">
+				<div class="form__lines">
+					<input id="surname" class="form__input" type="text" name="surname" placeholder=" " required>
+						<label for="surname" class="form__label">Фамилия</label>
+				</div>
+				<div class="form__lines">
+					<input id="name" class="form__input" type="text" name="name" placeholder=" " required>
+						<label class="form__label">Имя</label>
+				</div>
+				<div class="form__lines">
+					<input id="secondname" class="form__input" type="text" name="secondname" placeholder=" " required>
+						<label class="form__label">Отчество</label>
+				</div>
+				<div class="form__lines">
+					<input id="phone" class="form__input" type="tel" name="phone" placeholder=" " required>
+						<label class="form__label">Телефон</label>
+				</div>
+				<div class="form__lines">
+					<input id="email" class="form__input" type="email" name="email" placeholder=" " required>
+						<label for="email" class="form__label">E-mail</label>
+				</div>
+				<div class="delivery">
+					<p class="delivery__type__text">Выберите способ доставки&#58;</p>
+					<div class="delivery__type__pickup">
+						<input type="radio" class="pickup" name="delivery__type" value="pickup">Самовывоз со склада по адресу
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.6106532001648!2d27.487445387926826!3d53.864594887871085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd070a5809187%3A0x1732c6af71891181!2z0L_RgNC-0YHQv9C10LrRgiDQlNC30LXRgNC20LjQvdGB0LrQvtCz0L4gNjkvMiwg0JzQuNC90YHQuiAyMjAwODk!5e0!3m2!1sru!2sby!4v1551179300876" width="400" height="300" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="courier">
+						<input type="radio" class="courier" name="delivery__type" value="courier__delivery">Курьером по городу Минску
+						<input type="text" class="delivery__address" name="delivery__address" placeholder="Введите адрес доставки">
+					</div>
+					<!-- <select id="delivery">
+						<option value="pickup">Самовывоз со склада по адресу</option>
+						<option value="delivery">Курьером в пределах города Минска</option>
+					</select> -->
+
+				</div>
+
+				<div class="comment__form">
+					<label class="comment__box__text">Введите&nbsp;комментарий&nbsp;к&nbsp;заказу&#58;</label>
+					<textarea name="comments" placeholder=" " autocomplete="off" required></textarea>
+				</div>
+				<div>
+					<input class="checkbox__terms__input" type="checkbox" id="terms" name="terms" required>
+					<label class="checkbox__terms__label" for="terms">&laquo;Я&nbsp;прочитал&nbsp;и&nbsp;принимаю&nbsp;<a class="terms__link" href="#">условия</a>&nbsp;магазина&raquo;</label>
+					<button class="confirm__button" type="submit">Подтвердить заказ</button>
+				</div>
+				<p class="text__above__button">Чтобы появилась КНОПКА подтверждения - примите условия соглашения</p>
+				
+			</form>
+		</div>
+	</main>
+<hr>
+	<footer>
+		<div id="store-address">
+			<h3>Адрес магазина</h3>
+			<address>
+				<p><span class="footer__span__text"> Беларуcь, Минск, Пр-т Дзержинского 69 к2, офис 115</span></p>
+				<p><span class="footer__span">Телефон:</span><span class="velcom"> Velcom:</span><span class="footer__span__text"> +375 (29) 604 77 04</span></p>
+				<p><span class="footer__span">Skype:</span><span class="footer__span__text">Anton.Vasilyuk</span></p>
+				<p><span class="footer__span">E-mail:</span><span class="footer__span__text"> main@fmx.by</span></p>
+				<p><span class="footer__span">Рабочие часы:</span><span class="footer__span__text"> Понедельник-Пятница (09.00 - 18.00)</span></p>
+			</address>
+		</div>
+		<p><a href="#top">&uArr;&uArr;&uArr;</a></p>
+	</footer>
+</body>
+</html>

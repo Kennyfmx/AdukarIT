@@ -1,0 +1,462 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Arial, serif;
+	background-color: #fff;
+}
+section, header, footer {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+	height: 200px;
+
+}
+
+footer {
+	height: 300px;
+	text-align: center;
+}
+
+.company__logo {
+	float: left;
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	top: 0; 
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	width: 400px;
+	font-size: 40px;
+	text-decoration: underline;
+	color: #000; 
+	position: absolute;
+	margin: 10px;
+	text-align: center;
+	top: 40px;
+	left: 50%;
+	float: left;
+	
+}
+
+.header__text {
+	font-size: 20px;
+	color: #000; 
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	margin: 10px;
+	text-align: center;
+	top: 120px;
+	left: 50%;
+	
+}
+
+nav {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 10px;
+	background-color: #fff;
+	height: 2em;
+	top: 0;
+	z-index: 1;
+}
+
+.main__menu {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	width: 12em;
+	height: 1.2em;
+	float: left;
+	margin: auto;
+	padding: 0;
+	text-decoration: underline; 
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+
+}
+
+/*поиск*/
+
+.search__box {
+	display: block;
+	position: absolute;
+	margin: 20px;
+	right: 40px;
+	width: 200px;
+	height: 30px;
+	bottom: 0;
+	
+}
+
+.search__field {
+	position: relative;
+
+	
+}
+
+.form__label {
+	position: relative;
+	margin: 0 10px;
+	padding: 0 10px;
+	color: #000;
+	border-radius: 10px;
+}
+
+/*иконка корзины*/
+
+.basket__button {
+	display: block;
+	position: absolute;
+	width: 220px;
+	height: 64px;
+	margin: 0;
+	right: 40px;
+	bottom: 50%;
+	border-radius: 10px;
+	background-color: transparent;
+	outline: none;
+}
+
+.basket__button:hover {
+	background-color: #20c1e0;
+}
+
+.main__menu ul{
+	display: none;
+}
+
+.main__menu:hover ul{
+	display: block;
+}
+
+.submenu {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	width: 15em;
+	height: 2em;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-decoration: none; 
+	text-align: left;
+	list-style: none;
+
+}
+
+.submenu li {
+	list-style-type: none;
+	background-color: #fff;
+}
+
+.main__menu:hover {
+	background-color: #DCDCDC;
+
+}
+
+.submenu li a:hover {
+	background-color: #DCDCDC;
+   
+}
+
+a {
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: 'Times New Roman', Arial, serif;
+	text-decoration: none;
+	color: #000; 
+}
+
+a.terms__link {
+	font-size: 14pt;
+	text-decoration: underline;
+}
+
+hr {
+	clear: both
+}
+
+.order__form {
+	clear: both;
+}
+
+
+main {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	
+}
+
+h2 {
+	text-decoration: underline;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+
+/*конетейнер формы связи*/
+
+div.order__form {
+	display: block;
+	width: 50%;
+	height: auto;
+	position: relative;
+	margin: 10em 25% 5em 25%;
+	padding: 32px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	box-shadow: 0 4px 30px #000;
+
+
+}
+
+/*строки ввода*/
+
+.form__input, .confirm__button {
+	font-size: 20px;
+	
+}
+
+.form__lines {
+	position: relative;
+	margin-bottom: 20px;
+	background-color: transparent;
+}
+
+.form__label {
+	position: absolute;
+	font-size: 18px;
+	bottom: 10px;
+	color: #666666;
+	transition: 0.3s;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.form__input {
+	width: 100%;
+	height: 2em;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #666666;
+	background-color: #fff;
+	outline: none;
+	transition: 0.3s;
+
+}
+
+.form__input:focus {
+	border-bottom: 1px solid  #008080;
+
+}
+
+.form__input:focus + .form__label {
+	font-size: 13px;
+	font-weight: bold;
+	bottom: 30px;
+	color: #008080;
+
+}
+
+.form__input:valid + .form__label {
+	font-size: 13px;
+	font-weight: bold;
+	bottom: 30px;
+	color: #008080;
+
+}
+
+.form__input:valid {
+	border-bottom: 2px solid  #008080;
+}
+
+/*Контейнер доставка*/
+.delivery__type__text {
+	font-size: 14pt;
+}
+
+iframe {
+	display: none;
+}
+
+.delivery__address {
+	display: none;
+}
+.pickup:checked + iframe {
+	display: block;
+}
+
+.courier:checked + .delivery__address {
+	display: block;
+	width: 100%;
+	margin: 15px 0 15px 0;
+	padding: 0 0 5px 0;
+	border: none;
+	border-bottom: 1px solid #666666;
+	background-color: transparent;
+	outline: none;
+	transition: 0.3s;
+}
+
+.courier:checked + .delivery__address:focus {
+	border-bottom: 2px solid  #008080;
+}
+
+/*комментарии к заказу*/
+
+div.comment__form {
+	position: relative;
+	margin: 15px 0 15px 0;
+	
+}
+
+.comment__box__text {
+	font-size: 14pt;
+}
+
+textarea {
+	position: relative;
+	display: block;
+	margin: 15px 0 15px 0;
+	width: 100%;
+	max-height: 12em;
+	max-width: 600px;
+	border-bottom: 1px solid #666666;
+	outline: none;
+	font-size: 15px;
+
+}
+
+/*чекбокс*/
+
+.checkbox__terms__input {
+	display: none;
+}
+
+.checkbox__terms__input:checked + .checkbox__terms__label {
+	color: #000;
+}
+
+.checkbox__terms__input:checked + .checkbox__terms__label:before {
+	background-color:  #008080;
+}
+
+.checkbox__terms__input:checked + .checkbox__terms__label:after {
+	transform: translateX(23px);
+}
+
+.checkbox__terms__label {
+	font-size: 20px;
+	color: #7f7f7f;
+	position: relative;
+	padding: 0 10px 0 60px;
+	cursor: pointer;
+	transition: color 0.3s linear;
+
+}
+
+.checkbox__terms__label:before {
+	content: '';
+	display: inline-block;
+	width: 45px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+	background-color: #666666;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: background-color 0.3s linear;
+}
+
+.checkbox__terms__label:after {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	top: 1px;
+	left: 1px;
+	z-index: 1;
+	transition: transform 0.3s linear;
+	
+
+}
+
+.checkbox__terms__label:active:after {
+	transform: translateX(12px);
+	
+}
+
+.checkbox__terms__label:active:before {
+	background-color: #2F4F4F;
+}
+
+.checkbox__terms__input:checked + .checkbox__terms__label:active:after {
+	transform: translateX(12px);
+}
+
+.checkbox__terms__input:checked + .checkbox__terms__label:active:before {
+	background-color:  #2F4F4F;
+}
+
+.terms__text {
+	font-size: 18px;
+	padding-left: 50px;
+
+}
+
+/*кнопка*/
+
+
+.confirm__button {
+	visibility: hidden;
+}
+
+.checkbox__terms__input:checked ~ .confirm__button {
+	visibility: visible;
+}
+
+.text__above__button {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.confirm__button {
+	position: relative;
+	width: 100%;
+	height: 2em;
+	margin: 40px 0 0 0;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	background-color: #fff;
+	color: #000;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.confirm__button:focus, .confirm__button:hover {
+	background-color:  #008080;
+	color: #fff;
+
+}
+
