@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.first-btn, .second-btn {
+	margin: 50px;
+	padding: 10px;
+	height: 100px;
+	width: 1000px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 25px;
+	cursor: pointer;
+}
