@@ -62,7 +62,7 @@ function factorial(x) {
 	let result = 1;
 	for ( ; x > 1; x--) {
 		result = result * x;
-		return result;
 	}
+	return result;
 }
 console.log(factorial())
